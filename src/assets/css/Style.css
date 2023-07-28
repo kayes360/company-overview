@@ -1,0 +1,333 @@
+:root {
+  --light-green: #58bf73;
+  --mint: #b4ecd2;
+  --mint-25: #bbe5c9;
+  --mint-50: #93d1b5;
+  --dark-mint-50: #93d1b5;
+  --dark-mint-50: #64b992;
+  --light-grey: ##e3e3e3;
+  --grey: #e9e9e9;
+  --dark-grey: #c9c9c9;
+  --light-orange: #f6d45b;
+  --nav-text-green: #1f8e3d;
+  --paragraph-font-size: 24px;
+}
+
+nav ul li:first-child a {
+  color: var(--nav-text-green);
+}
+nav ul {
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+}
+.btn-light-green {
+  --bs-btn-bg: var(--light-green);
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-bg: #3b8950;
+}
+.custom-btn-text {
+  font-family: IBM Plex Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.text-light-green {
+  color: var(--light-green);
+}
+.text-light-orange {
+  color: var(--light-orange);
+}
+.bg-mint {
+  background-color: var(--mint) !important;
+}
+.bg-mint-25 {
+  background-color: var(--mint-25) !important;
+}
+.bg-mint-50 {
+  background-color: var(--mint-50) !important;
+}
+.bg-dark-mint-50 {
+  background-color: var(--dark-mint-50) !important;
+}
+.bg-grey {
+  background-color: var(--grey) !important;
+}
+.header-shadow {
+  box-shadow: 0px 6px 4px 0px rgba(27, 83, 49, 0.24);
+}
+.custom-shadow-1 {
+  box-shadow: -9px -9px 16px 0px rgba(238, 238, 238, 0.6),
+    10px 10px 17px 0px rgba(193, 208, 195, 0.26);
+}
+.custom-shadow-2 {
+  box-shadow: -9px -9px 16px 0px rgba(238, 238, 238, 0.6),
+    10px 10px 17px 0px rgba(193, 208, 195, 0.26);
+}
+.custom-shadow-3 {
+  box-shadow: 10px 10px 17px 0px rgba(194, 209, 196, 0.15);
+}
+.custom-shadow-4 {
+  box-shadow: 0px 22px 30px 0px rgba(16, 112, 41, 0.08);
+}
+.custom-shadow-green {
+  box-shadow: -9px -9px 16px 0px rgba(255, 255, 255, 0.6),
+    12px 12px 20px 0px rgba(164, 198, 163, 0.5);
+}
+body {
+  font-family: Roboto;
+}
+/* Header Section Style  */
+@media (width <= 330px) {
+  .header-logo-wrapper {
+    width: 180px;
+  }
+}
+/* Header Section Style End */
+
+/* Hero Section Style */
+.hero-title {
+  font-weight: 400;
+  line-height: 114.188%;
+}
+.hero-title p:nth-child(1) span {
+  font-weight: 800;
+}
+.hero-title p:nth-child(2) span {
+  font-weight: 600;
+}
+.hero-text {
+  font-size: var(--paragraph-font-size);
+  font-weight: 400;
+}
+@media (width >= 1400px) {
+  .hero-title {
+    font-size: 95px;
+  }
+}
+@media (width <=1400px) {
+  .hero-title {
+    font-size: 85px;
+  }
+}
+@media (width <= 1200px) {
+  .hero-title {
+    font-size: 75px;
+  }
+}
+@media (width <= 992px) {
+  .hero-title {
+    font-size: 55px;
+  }
+}
+
+@media (width <= 340px) {
+  .hero-title {
+    font-size: 45px;
+  }
+}
+
+/* Hero Section Style End */
+
+/* Table Section Style */
+.table-section-title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 127%;
+}
+@media (width <= 340px) {
+  .table-section-title {
+    font-size: 35px;
+  }
+}
+.custom-table {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+.custom-table,
+.custom-table td {
+  border: 1px solid #fff;
+}
+
+.custom-table thead .table-column-title {
+  background-color: var(--grey);
+  border: 1px solid transparent;
+  border-bottom-color: white;
+}
+
+.custom-table td {
+  background-color: var(--mint);
+  margin: 5px;
+}
+
+.custom-table thead th,
+.custom-table td {
+  padding: 15px 20px;
+}
+.custom-table td:not(.table-column-title) {
+  border-radius: 10px;
+}
+.thead-row .table-column-title:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.thead-row .table-column-title:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Table Section Style End */
+/* Client Section Style  */
+.client-section-title {
+  font-size: 40px;
+  font-weight: 500;
+}
+.client-section-title span {
+  font-weight: 900;
+}
+.client-section-subtitle {
+  font-size: var(--paragraph-font-size);
+}
+.client-section-img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
+.with-text::after {
+  content: "asd";
+}
+/* Client Section Style End */
+
+/* Service Section Style */
+.service-section-title,
+.graph-and-table-section-title {
+  font-size: 40px;
+  font-weight: 500;
+}
+.service-section-subtitle,
+.graph-and-table-section-subtitle {
+  font-size: 24px;
+}
+.service-section-list {
+  font-size: 22px;
+  margin-top: 5rem;
+}
+.service-section-list i {
+  color: var(--mint);
+}
+
+/* Service Section Style End */
+
+/* Graph and Table Section Style  */
+.graph-and-table-section-heading {
+  margin: 0 10rem;
+}
+.graph-and-table-section-table-title {
+  font-size: 20px;
+}
+@media (width <= 1200px) {
+  .graph-and-table-section-heading {
+    margin: 0 6rem;
+  }
+}
+@media (width <= 576px) {
+  .graph-and-table-section-heading {
+    margin: 0 2rem;
+  }
+  .graph-and-table-section-title {
+    font-size: 25px;
+  }
+  .graph-and-table-section-subtitle {
+    font-size: 15px;
+  }
+}
+/* Graph and Table Section Style End */
+
+/* Available Service Section Style  */
+.round-shape {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Available Service Section Style End */
+
+/* Current Client Section  */
+.current-client-section-heading {
+  margin: 0 10rem;
+}
+.current-client-section-title {
+  font-size: 40px;
+  font-weight: 500;
+}
+@media (width <= 1200px) {
+  .current-client-section-heading {
+    margin: 0 6rem;
+  }
+}
+@media (width <= 576px) {
+  .current-client-section-heading {
+    margin: 0 2rem;
+  }
+  .current-client-section-title {
+    font-size: 25px;
+  }
+  .current-client-section-subtitle {
+    font-size: 15px;
+  }
+}
+/* Current Client Section End */
+
+/* CTA section  */
+.cta-section-wrapper {
+  margin: 0 6rem;
+}
+.cta-section-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+@media (width <= 1200px) {
+  .cta-section-wrapper {
+    margin: 0 6rem;
+  }
+}
+@media (width <= 576px) {
+  .cta-section-wrapper {
+    margin: 0 2rem;
+  }
+  .cta-section-title {
+    font-size: 25px;
+  }
+  .cta-section-subtitle {
+    font-size: 15px;
+  }
+}
+/* CTA section End */
+
+/* Footer Style  */
+footer {
+  background-color: var(--dark-grey);
+}
+.vertical-rule {
+  width: 1px;
+  height: inherit;
+  display: inline;
+  border-left: 1px solid #010c23;
+  opacity: 0.15000000596046448;
+}
+footer ul {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+/* Footer Style End */
