@@ -3,7 +3,7 @@ import LogoColorImg from "../assets/img/LogoColorImg.png";
 export default function Header() {
   return (
     <div className="header-shadow">
-      <header className=" container">
+      <header className="container-fluid">
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <a className="navbar-brand header-logo-wrapper">

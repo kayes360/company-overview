@@ -17,7 +17,8 @@ function App() {
     <>
         <Header />
         <Hero />
-      <div className="container">
+      <div className="container  ">
+   
         <TableSection />
         <ClientsSection />
         <CardSection />

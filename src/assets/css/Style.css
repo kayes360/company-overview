@@ -92,45 +92,61 @@ body {
 
 /* Hero Section Style */
 .hero-title {
-  font-weight: 400;
-  line-height: 114.188%;
-}
-.hero-title p:nth-child(1) span {
-  font-weight: 800;
-}
-.hero-title p:nth-child(2) span {
-  font-weight: 600;
-}
-.hero-text {
-  font-size: var(--paragraph-font-size);
-  font-weight: 400;
-}
-@media (width >= 1400px) {
-  .hero-title {
-    font-size: 95px;
+    font-weight: 400;
+    line-height: 114.188%;
+    font-size: clamp(45px, 10vw, 95px); /* Fluid Typography */
   }
-}
-@media (width <=1400px) {
-  .hero-title {
-    font-size: 85px;
+  
+  .hero-title p:nth-child(1) span {
+    font-weight: 800;
   }
-}
-@media (width <= 1200px) {
-  .hero-title {
-    font-size: 75px;
+  
+  .hero-title p:nth-child(2) span {
+    font-weight: 600;
   }
-}
-@media (width <= 992px) {
-  .hero-title {
-    font-size: 55px;
+  
+  .hero-text {
+    font-size: 1rem; /* Or your preferred paragraph font size */
+    font-weight: 400;
   }
-}
+  
+  /* Breakpoints using max-width */
+  @media (max-width: 1400px) {
+    .hero-title {
+      font-size: clamp(45px, 8vw, 85px);
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .hero-title {
+      font-size: clamp(45px, 7vw, 75px);
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .hero-title {
+      font-size: clamp(45px, 5vw, 55px);
+    }
+  }
+  
+  /* Optional: Additional breakpoint for very small screens */
+  @media (max-width: 340px) {
+      .hero-title{
+          font-size: 45px;
+      }
+  }
 
-@media (width <= 340px) {
-  .hero-title {
-    font-size: 45px;
+  .hero-img-wrapper{
+   position: relative; 
+
+   height: 700px;
+  } 
+  .hero-img{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 800px;
   }
-}
 
 /* Hero Section Style End */
 
@@ -316,7 +332,7 @@ body {
 
 /* Footer Style  */
 footer {
-  background-color: var(--dark-grey);
+  background-color: var(--mint);
 }
 .vertical-rule {
   width: 1px;

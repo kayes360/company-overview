@@ -3,9 +3,9 @@ import HeroImg from "../assets/img/HeroImg.png";
 export default function Hero() {
   return (
     <section className="row m-0 p-0">
-      <div className="col-lg-6 col-md-6 col-sm-12 col-12  ">
+      <div className="col-lg-6 col-md-6 col-sm-12 col-12   ">
         <div className=" d-flex flex-column align-items-center mt-5">
-          <div className="hero-title ms-5">
+          <div className="hero-title ">
             <p>
               Lore <span>ipsum .</span>
             </p>
@@ -13,13 +13,13 @@ export default function Hero() {
               Dolor <span>sit .</span>
             </p>
           </div>
-         <div>
-         <p className="hero-text mx-auto w-50">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatu. Sed ut perspiciatis unde
-            omnis iste natus error.
-          </p>
-         </div>
+          <p className="hero-text   w-50">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatu. Sed ut perspiciatis unde
+                omnis iste natus error.
+            </p>
+
+
           <div className="d-flex flex-lg-row flex-md-row flex-sm-column flex-column   ms-4">
             <button className="btn btn-outline-dark custom-btn-text mx-2 px-5">
               Viverra orci sagittis
